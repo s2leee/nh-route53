@@ -3,7 +3,7 @@ resource "aws_lb" "nh_alb" {
   name               = "nh-alb"
   internal           = false
   load_balancer_type = "application"
-  security_groups    = "sg-05f6833f701143e65"
+  security_groups    = ["sg-05f6833f701143e65"]
   #subnets            = [var.is_portal_subnet == true ? data.aws_subnet.selee-subnet[0].id : aws_subnet.new_subnet[0].id]
   #subnets            =  [for subnet in aws_subnet.new_subnet : subnet.id]
   dns_name              = "test_dns"
