@@ -13,7 +13,7 @@ resource "aws_lb" "nh_alb" {
     #private_ipv4_address = "10.0.1.15"
   }
  subnet_mapping {
-    subnet_id            = "subnet-0d68b1d3f2e7e1ebb"
+    subnet_id            = "subnet-0548a4b00ffb7b1f5"
     #private_ipv4_address = "10.0.2.15"
   }
   enable_deletion_protection = false
