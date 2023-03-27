@@ -10,11 +10,12 @@ variable "name" {
   type = string
 }
 
+/*
 variable "record_name" {
      type = list(string)
 }
 
-/*
+
 variable "names" {
         type = map(object({
                 {
