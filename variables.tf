@@ -18,10 +18,10 @@ variable "record_name" {
 variable "names" {
         type = map(object({
                 {
-            "a.abc.com"  {
+            "a.abc.com"  = {
               record_name = "a"
                 }
-            "b.def.com"  {
+            "b.def.com"  = {
               record_name   = "b"
                 }
         }))
