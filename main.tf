@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+provider "aws"{
+access_key  = "${var.access_key}"
+secret_key  = "${var.secret_key}"
+region = "ap-northeast-2"
+}
 
 # ALB
 resource "aws_lb" "nh_alb" {
