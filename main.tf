@@ -5,7 +5,7 @@ resource "aws_route53_zone" "route53_zone" {
 resource "aws_route53_record" "route53_record" {
         for_each = var.record_name
         zone_id = aws_route53_zone.route53_zone.zone_id
-        name = var.record_name
+        name = each.value.host
         type = "A"
 /*
         alias {
