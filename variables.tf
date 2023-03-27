@@ -30,6 +30,6 @@ variable "names" {
 */
   variable "names" {
         type = map(object({
-               host = string
+               record_name = string
         }))
 }
