@@ -46,7 +46,7 @@ resource "aws_route53_record" "route53_record" {
         for_each = var.names
         zone_id = aws_route53_zone.route53_zone.zone_id
         name = each.key
-        type = "A"
+        type = "NS"
 
         alias {
                 #name = aws_lb.nh_alb.dns_name
