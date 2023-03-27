@@ -49,7 +49,8 @@ resource "aws_route53_record" "route53_record" {
         type = "A"
 
         alias {
-                name = aws_lb.nh_alb.dns_name
+                #name = aws_lb.nh_alb.dns_name
+                name = "nh-alb-431188028.ap-northeast-2.elb.amazonaws.com"
                 zone_id = aws_route53_zone.route53_zone.zone_id
                 evaluate_target_health = true
         }
