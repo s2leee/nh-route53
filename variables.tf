@@ -14,3 +14,17 @@ variable "record_name" {
      type = list(string)
 }
 
+
+variable "names" {
+        type = map(object({
+                {
+            "a.abc.com" = {
+              domain = "abc.com"
+              record_name = "a"
+                }
+            "b.def.com" = {
+              domain = "def.com"
+              record_name   = "b"
+                }
+        }))
+}
