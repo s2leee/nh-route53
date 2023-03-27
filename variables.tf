@@ -14,7 +14,7 @@ variable "record_name" {
      type = list(string)
 }
 
-
+/*
 variable "names" {
         type = map(object({
                 {
@@ -24,5 +24,11 @@ variable "names" {
             "b.def.com"  = {
               record_name   = "b"
                 }
+        }))
+}
+*/
+  variable "names" {
+        type = map(object({
+               record_name = string
         }))
 }
