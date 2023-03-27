@@ -24,11 +24,11 @@ resource "aws_lb" "nh_alb" {
   #dns_name              = "test_dns"
         
    subnet_mapping {
-    subnet_id            = "subnet-01982281a02f2720f"
+    subnet_id            = "subnet-0548a4b00ffb7b1f5"
     #private_ipv4_address = "10.0.1.15"
   }
  subnet_mapping {
-    subnet_id            = "subnet-0e8ab0ba8e0d5013f"
+    subnet_id            = "subnet-0d37f77be8c1b8329"
     #private_ipv4_address = "10.0.2.15"
   }
   enable_deletion_protection = false
